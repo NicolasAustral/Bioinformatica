@@ -10,10 +10,10 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-<meta name="author" content="Trabajo práctico cuatrimestral" />
+<meta name="author" content="Tp cuatrimestral" />
 
 
-<title>Tp cuatrimestral</title>
+<title>Trabajo práctico cuatrimestral</title>
 
 <script src="site_libs/header-attrs-2.10/header-attrs.js"></script>
 
@@ -38,7 +38,8 @@
 <div class="col s12 m3">
 <div class="table cover">
 <div class="cover-card table-cell table-middle">
-<span class="author_bio mbm">Trabajo práctico cuatrimestral</span>
+<span class="author_name">Trabajo práctico cuatrimestral</span>
+<span class="author_bio mbm">Tp cuatrimestral</span>
 <span class="author_bio mbm">27-09-2021</span>
 </div>
 </div>
@@ -50,30 +51,33 @@
 
 <div id="post">
 <article class="post-content">
+<div id="trabajo-practico-initial-work" class="section level1" style="background: #01DFA5;">
+<h1>Trabajo practico: Initial work</h1>
+</div>
 <p>Entre las sustancias que permiten a las plantas resistir enfermedades se encuentran los fenilpropanoides. En un estudio de plantas de maíz sensibles a ciertas enfermedades se encontró que algunas eran incapaces de sintetizar ácido cumárico. Con la secuencia proporcionada podemos realizar un estudio sobre el gen, para ello la primera herramienta es el Blast de nucleótidos proporcionado por la NCBI:</p>
 <div class="figure" style="text-align: center">
-<img src="/NicolasAustral/Bioinformatica/blob/main/Imagenes/Blast%20option.png?raw=trueg" alt="Image 1: Selected blast option" width="50%" />
+<img src="https://i.ibb.co/7NrFxV1/Blast-option.png" alt="Image 1: Selected blast option" width="50%" />
 <p class="caption">
 Image 1: Selected blast option
 </p>
 </div>
 Una vez seleccionada la opción, ingresamos la secuencia query (sobre la que queremos trabajar) y apretamos el botón “blast”
 <div class="figure" style="text-align: center">
-<img src="C:/Users/Nicolas/Desktop/Austral/Bioinformatica/Tp%20cuatrimestral/Imagenes/Query%20steps.png" alt="Image 2: Query steps" width="50%" />
+<img src="https://i.ibb.co/qxkQYBb/Query-steps.png" alt="Image 2: Query steps" width="50%" />
 <p class="caption">
 Image 2: Query steps
 </p>
 </div>
 <p>Esto nos dará una serie de secuencias llamadas “subject” las cuales tienen un cierto parecido con la secuencia query, de todas ellas elegiremos la primera</p>
 <div class="figure" style="text-align: center">
-<img src="C:/Users/Nicolas/Desktop/Austral/Bioinformatica/Tp%20cuatrimestral/Imagenes/Some%20subjects.png" alt="Image 3: Subjects queries" width="75%" />
+<img src="https://i.ibb.co/bPM7yjV/Some-subjects.png" alt="Image 3: Subjects queries" width="75%" />
 <p class="caption">
 Image 3: Subjects queries
 </p>
 </div>
 <p>Al hacer clic sobre ella e ingresar a la nueva pestaña podremos notar dos cosas, el “sequence ID” (marcado con el 1) y el alineamiento entre la secuencia query y la subject (Marcado con el 2)</p>
 <div class="figure" style="text-align: center">
-<img src="C:/Users/Nicolas/Desktop/Austral/Bioinformatica/Tp%20cuatrimestral/Imagenes/Sequence%20y%20id.png" alt="Image 4: Sequence and id" width="50%" />
+<img src="https://i.ibb.co/dkG8wRZ/Sequence-y-id.png" alt="Image 4: Sequence and id" width="50%" />
 <p class="caption">
 Image 4: Sequence and id
 </p>
@@ -96,46 +100,46 @@ Image 4: Sequence and id
 <p>El codón de iniciación (TAC) se encuentra en la base número 54 y el de terminación en la base 2504 (ATC)</p>
 <p>De los pasos anteriores conseguiremos el Locus, el cual usaremos para buscar en la database Uniprot y así obtendremos las proteínas con ese nombre que almacenen en la DB</p>
 <div class="figure" style="text-align: center">
-<img src="C:/Users/Nicolas/Desktop/Austral/Bioinformatica/Tp%20cuatrimestral/Imagenes/Resultados%20de%20uniprot.png" alt="Image 5: Results of uniprot" width="50%" />
+<img src="https://i.ibb.co/wpy43y6/Resultados-de-uniprot.png" alt="Image 5: Results of uniprot" width="50%" />
 <p class="caption">
 Image 5: Results of uniprot
 </p>
 </div>
 <p>Estos resultados son útiles para encontrar la función de la proteína o la “EC” usado para clasificar las enzimas según la reacción que catalizan</p>
 <div class="figure" style="text-align: center">
-<img src="C:/Users/Nicolas/Desktop/Austral/Bioinformatica/Tp%20cuatrimestral/Imagenes/Protein%20function.png" alt="Image 6: Protein function" width="50%" />
+<img src="https://i.ibb.co/dbYxPHd/Protein-function.png" alt="Image 6: Protein function" width="50%" />
 <p class="caption">
 Image 6: Protein function
 </p>
 </div>
 <div class="figure" style="text-align: center">
-<img src="C:/Users/Nicolas/Desktop/Austral/Bioinformatica/Tp%20cuatrimestral/Imagenes/EC%20numero.png" alt="Image 7: EC code" width="50%" />
+<img src="https://i.ibb.co/sFt6PPF/EC-numero.png" alt="Image 7: EC code" width="50%" />
 <p class="caption">
 Image 7: EC code
 </p>
 </div>
 <p>Otra herramienta útil es la ofrecida por KEGG Pathway, la cual nos permite estudiar la vía metabólica donde actúa la proteína. Para utilizarla realizaremos una query con el EC obtenido previamente y seleccionaremos el pathway que nos interesa</p>
 <div class="figure" style="text-align: center">
-<img src="C:/Users/Nicolas/Desktop/Austral/Bioinformatica/Tp%20cuatrimestral/Imagenes/Kegg%20quey.png" alt="Image 8: Query in KEGG" width="50%" />
+<img src="https://i.ibb.co/Tv5GbPL/Kegg-quey.png" alt="Image 8: Query in KEGG" width="50%" />
 <p class="caption">
 Image 8: Query in KEGG
 </p>
 </div>
 <div class="figure" style="text-align: center">
-<img src="C:/Users/Nicolas/Desktop/Austral/Bioinformatica/Tp%20cuatrimestral/Imagenes/Pathway%20seleccionado.png" alt="Image 9: Selected pathway" width="75%" />
+<img src="https://i.ibb.co/N35fJsR/Pathway-seleccionado.png" alt="Image 9: Selected pathway" width="75%" />
 <p class="caption">
 Image 9: Selected pathway
 </p>
 </div>
 <p>Ahora, supongamos que queremos hacer lo inverso, es decir, a partir de un gen de interés conseguir el ADN. En este caso, y usando una proteína PR-1, volveremos a la base de datos del NCBI y realizaremos la query con el nombre, al elegir la opción que más nos interesa, podremos ver diferentes “Líneas” las cuales representan el ADN.</p>
 <div class="figure" style="text-align: center">
-<img src="C:/Users/Nicolas/Desktop/Austral/Bioinformatica/Tp%20cuatrimestral/Imagenes/Pr%20elegido%20y%20resultado.png" alt="Image 10: Chosen PR" width="75%" />
+<img src="https://i.ibb.co/jr6bmTJ/Pr-elegido-y-resultado.png" alt="Image 10: Chosen PR" width="75%" />
 <p class="caption">
 Image 10: Chosen PR
 </p>
 </div>
 <div class="figure" style="text-align: center">
-<img src="C:/Users/Nicolas/Desktop/Austral/Bioinformatica/Tp%20cuatrimestral/Imagenes/Secuencia%20elegida%20pr1.png" alt="Image 11: ADN sequence" width="75%" />
+<img src="https://i.ibb.co/qNgH8Mt/Secuencia-elegida-pr1.png" alt="Image 11: ADN sequence" width="75%" />
 <p class="caption">
 Image 11: ADN sequence
 </p>
@@ -143,7 +147,7 @@ Image 11: ADN sequence
 <p>Ciertas preguntas que pueden aparecer son la de ¿Por qué la barra roja es más corta que la azul? Cuya explicación es que la barra azul representa al ARNm, que es inmaduro. Este va a sufrir un proceso llamado splicing donde va a perder las regiones no codificantes o intrones. La proteína se va a sintetizar a partir de este ADN maduro, más corto, y por eso es más corta.</p>
 <p>Otra información relevante al momento de analizar una proteínas es el péptido señal.</p>
 <div class="figure" style="text-align: center">
-<img src="C:/Users/Nicolas/Desktop/Austral/Bioinformatica/Tp%20cuatrimestral/Imagenes/Chinese%20tomato%20signla.png" alt="Image 12: Signal peptide" width="75%" />
+<img src="https://i.ibb.co/rb7hdw6/Chinese-tomato-signla.png" alt="Image 12: Signal peptide" width="75%" />
 <p class="caption">
 Image 12: Signal peptide
 </p>
